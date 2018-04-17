@@ -4,10 +4,11 @@ permalink: /
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/home_page/yasith.jpg
-  cta_label: "<i class='fas fa-download'></i> Install Now"
-  cta_url: "/docs/quick-start-guide/"
+  cta_label: "<i class='fas fa-download'></i> Request a Demo"
+  cta_url: "meet.meetrix.io"
   caption:
-excerpt: 'A flexible two-column Jekyll theme. Perfect for personal sites, blogs, and portfolios hosted on GitHub or your own server.<br /> <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.10.1">Latest release v4.11.1</a></small><br /><br /> {::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe> <iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>{:/nomarkdown}'
+title:  "Meetrix Consult"
+excerpt: 'The ultimate video consultation platform.<br />Fully featured with HTML5, WebRTC, React and a Serverless Backend.<br /> Complete administration system which can be easily customizable for your need'
 feature_row:
   - image_path: /assets/images/home_page/topics/custom_dev.png
     alt: "custom development"
@@ -33,7 +34,7 @@ feature_row:
 github:
   - excerpt: '{::nomarkdown}<iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe> <iframe style="display: inline-block;" src="https://ghbtns.com/github-btn.html?user=mmistakes&repo=minimal-mistakes&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="158px" height="30px"></iframe>{:/nomarkdown}'
 intro:
-  - excerpt: 'Get notified when I add new stuff &nbsp; [<i class="fab fa-twitter"></i> @mmistakes](https://twitter.com/mmistakes){: .btn .btn--twitter} [<i class="fab fa-paypal"></i> Tip Me](https://www.paypal.me/mmistakes){: .btn .btn--primary}'
+  - excerpt: 'Get in touch &nbsp; [<i class="fab fa-facebook"></i> @meetrix](https://www.facebook.com/meetrix/){: .btn .btn--twitter}'
 ---
 
 {% include feature_row id="intro" type="center" %}
