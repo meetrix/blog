@@ -13,20 +13,25 @@ Most of the webRTC libraries including SimpleWebRTC, SpreedWebRTC requires the t
 When a turn server is installed, we can star the turn server with long term credentials mechanism using `-a` flag and we can pass the shared secret like this.
 
 
-`--static-auth-secret=mySecret`
+```bash
+--static-auth-secret=mySecret
+```
 
 
 Following is a complete command to run the turn server
 
 
-`turnserver -a -v -L 0.0.0.0 --server-name coturn --static-auth-secret=mysecret --realm=north.gov  -p 3478 --min-port 10000 --max-port 20000
-`
+```bash
+turnserver -a -v -L 0.0.0.0 --server-name coturn --static-auth-secret=mysecret --realm=north.gov  -p 3478 --min-port 10000 --max-port 20000
+```
 
 * `-a` is to enable long-tern-credentials machanism. 
 * `-v` means the verbose mode. 
 * With -L we can specify the ip address that the turn-server listen.
 
 Other parameters have obvious meanings as in their names.
+
+## Containerization
 
 Now, lets setup Coturn inside a docker container. Create directory named `CoturnDocker` and create a Dockerfile with following content inside that directory.
 
