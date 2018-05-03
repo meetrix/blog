@@ -138,5 +138,10 @@ Login and push the image
 docker login
 docker push meetrix/coturn-long-term-cred:latest
 ```
+
+## Source Code & Docker Image
+
+Sourcecode for this guide can be found at [meetrix github repo](https://github.com/meetrix/coturnDockerLongTermCredentials)
+Public Docker image for this project is published in [meetrix docker hub account](https://hub.docker.com/r/meetrix/coturn-long-term-cred/)
  
  
