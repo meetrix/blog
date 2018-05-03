@@ -1,14 +1,12 @@
 ---
-title: "Installation"
-permalink: /webrtc/installation/
+title: "Setting up a Coturn Docker Image wih Long Term Credentials Mechanism support"
+permalink: /webrtc/turnserver/long_term_cred
 excerpt: "Setting up Turn Server."
 last_modified_at: 2018-05-03T15:59:00-04:00
 toc: true
 ---
 
-# Turn Server Configuration
-
-## Long Term Credential Mechanism with Docker
+## Long Term Credential Mechanism
 
 Most of the webRTC libraries including SimpleWebRTC, SpreedWebRTC requires the turn server to be configured in long-term credentials mechanism. 
 When a turn server is installed, we can star the turn server with long term credentials mechanism using `-a` flag and we can pass the shared secret like this.
@@ -75,7 +73,7 @@ docker run --net=host --name my-coturn -t coturn-long-term-cred
 
 with `--net=host` we are instructing to use the host network instead of docker network. This is needed for Coturn to operate properly.
 
-###Testing
+## Testing
 
 To test whether our coturn server works as a perfect turn server, first we need to generate username and password. The algorithm is described in [coturn wiki](https://github.com/coturn/coturn/wiki/turnserver). Following shell script will generate the username and password when you provide the `secret` (mysecret in this case).
 
@@ -107,7 +105,7 @@ for example
 For Username and Passoword enter the respective outputs from the above bash script. Then click `Add Server` button and press `Gather candidates` button. If you get a `Done`
 message, you have successfully configured the turn server.
 
-###Pushing the image to Docker Hub
+## Pushing the image to Docker Hub
 After the image is built run the following command to find out the image id.
 
 ```bash
