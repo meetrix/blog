@@ -4,6 +4,7 @@ permalink: /webrtc/turnserver/long_term_cred
 excerpt: "Setting up Turn Server."
 last_modified_at: 2018-05-03T15:59:00-04:00
 toc: true
+author: Jay
 ---
 
 ## Long Term Credential Mechanism
