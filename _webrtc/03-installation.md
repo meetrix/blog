@@ -75,7 +75,9 @@ docker run --net=host --name my-coturn -t coturn-long-term-cred
 
 with `--net=host` we are instructing to use the host network instead of docker network. This is needed for Coturn to operate properly.
 
-To test whether our coturn server works as a perfect turn server, first we need to generate username and passowrd.
+###Testing
+
+To test whether our coturn server works as a perfect turn server, first we need to generate username and password. The algorithm is described in [coturn wiki](https://github.com/coturn/coturn/wiki/turnserver). Following shell script will generate the username and password when you provide the `secret` (mysecret in this case).
 
 ```bash
 secret=mysecret && \
@@ -86,8 +88,26 @@ echo username:$username && \
 echo password : $(echo -n $username | openssl dgst -binary -sha1 -hmac $secret | openssl base64)
 ```
 
+output of this script would be some thing like following
 
+```bash
+username:1525325424
+password : YuzkH/Th9BBaRj4ivR03PiCfr+E=
+```
 
+Now go to [trickle ice](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/) page to test our turn server.
+If there any existing ICE servers remove them. Then input your turn server URI, username and password. Turn server URI should be in following format.
+
+`turn:<YOUR_SERVER_IP>:<YOUR_SERVER_PORT>`
+
+for example
+
+`turn:1.2.3.4:3478`
+
+For Username and Passoword enter the respective outputs from the above bash script. Then click `Add Server` button and press `Gather candidates` button. If you get a `Done`
+message, you have successfully configured the turn server.
+
+###Pushing the image to Docker Hub
 After the image is built run the following command to find out the image id.
 
 ```bash
@@ -100,9 +120,19 @@ You'll find something like this
 coturn-long-term-cred      latest              8bd04b84d978        About a minute ago   138MB
 ```
 
-If you want to push the image to docker hub, you can follow the rest of the guide.
 copy that id (`8bd04b84d978` in this case).
 
 Then tag the image with your docker hub user name
+
+```bash
+docker tag 8bd04b84d978 meetrix/coturn-long-term-cred:latest
+```
+
+Login and push the image
+
+```bash
+docker login
+docker push meetrix/coturn-long-term-cred:latest
+```
  
  
