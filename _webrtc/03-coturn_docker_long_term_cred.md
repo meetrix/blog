@@ -14,7 +14,7 @@ When a turn server is installed, we can star the turn server with long term cred
 
 
 ```bash
---static-auth-secret=mySecret
+--static-auth-secret=mysecret
 ```
 
 
@@ -27,7 +27,7 @@ turnserver -a -v -L 0.0.0.0 --server-name coturn --static-auth-secret=mysecret -
 
 * `-a` is to enable long-tern-credentials machanism. 
 * `-v` means the verbose mode. 
-* With -L we can specify the ip address that the turn-server listen.
+* With `-L` we can specify the ip address that the turn-server listen.
 
 Other parameters have obvious meanings as in their names.
 
@@ -102,13 +102,15 @@ password : YuzkH/Th9BBaRj4ivR03PiCfr+E=
 Now go to [trickle ice](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/) page to test our turn server.
 If there any existing ICE servers remove them. Then input your turn server URI, username and password. Turn server URI should be in following format.
 
-`turn:<YOUR_SERVER_IP>:<YOUR_SERVER_PORT>`
+```bash
+turn:<YOUR_SERVER_IP>:<YOUR_SERVER_PORT>
+```
 
 for example
 
-`turn:1.2.3.4:3478`
+```turn:1.2.3.4:3478```
 
-For Username and Passoword enter the respective outputs from the above bash script. Then click `Add Server` button and press `Gather candidates` button. If you get a `Done`
+For Username and Password enter the respective outputs from the above bash script. Then click `Add Server` button and press `Gather candidates` button. If you get a `Done`
 message, you have successfully configured the turn server.
 
 ## Pushing the image to Docker Hub
@@ -118,7 +120,7 @@ After the image is built run the following command to find out the image id.
 docker images | grep coturn-long-term-cred
 ```
 
-You'll find something like this
+You'll find something like this as the output
 
 ```bash
 coturn-long-term-cred      latest              8bd04b84d978        About a minute ago   138MB
