@@ -21,7 +21,7 @@ title_separator          : "-"
 name                     : &name "Meetrix Technology Solutions"
 description              : "The Tech You Need to Run the Marathon"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "/"
 repository               : "meetrix/blog"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)

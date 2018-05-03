@@ -80,8 +80,17 @@ gallery:
 
 {% include feature_row %}
 
+# Why Us ?
 {% include feature_row id="feature_row2" type="left" %}
 
-# Clients
+# Expertise
 
+---
+
+# Clients
 {% include gallery %}
+
+---
+# Get In Touch
+
+hello@meetrix.io
