@@ -19,6 +19,7 @@ First Make sure that you have opened up following ports in your firewall
 3478 : UDP
 49152–65535 : UDP
 ```
+If you are installing Coturn on the same box as Kurento, you have to open additional ports for Kurento as well
 
 Login to Ubuntu 16.04 shell and enter following command to install Coturn
 
