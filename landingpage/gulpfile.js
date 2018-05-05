@@ -101,8 +101,49 @@ gulp.task('js:minify', function() {
 // JS
 gulp.task('js', ['js:minify']);
 
+// Copy third party libraries from /node_modules into /vendor
+gulp.task('copy', function() {
+
+  // CSS
+  gulp.src([
+    './css/**/*',
+  ])
+    .pipe(gulp.dest('../_site/css'))
+
+  // JS
+  gulp.src([
+    './js/**/*',
+  ])
+    .pipe(gulp.dest('../_site/js'))
+
+  // Images
+  gulp.src([
+    './img/**/*',
+  ])
+    .pipe(gulp.dest('../_site/img'))
+
+  // Vendor
+  gulp.src([
+    './vendor/**/*',
+  ])
+    .pipe(gulp.dest('../_site/vendor'))
+
+  // Index
+  gulp.src([
+    './index.html',
+  ])
+    .pipe(gulp.dest('../_site'))
+
+  // Favicon
+  gulp.src([
+    './favicon.ico',
+  ])
+    .pipe(gulp.dest('../_site'))
+
+});
+
 // Default task
-gulp.task('default', ['css', 'js', 'vendor']);
+gulp.task('default', ['css', 'js', 'vendor', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
