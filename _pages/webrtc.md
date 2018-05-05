@@ -1,7 +1,7 @@
 ---
 title: WebRTC
 layout: collection
-permalink: /webrtc
+permalink: /
 collection: webrtc
 entries_layout: grid
 classes: wide
