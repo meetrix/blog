@@ -1,19 +1,18 @@
 ---
 title: "Installing Coturn on Ubuntu 16.04 to Work with Kurento"
 permalink: /webrtc/kurento/
-excerpt: "Instructions and suggestions for upgrading the theme."
+excerpt: "Shared Secret Mechanism"
 header:
-  image: /assets/images/webrtc/04-kurento-installation/kurento-coturn.png
+  overlay_image: /assets/images/webrtc/04-kurento-installation/kurento-coturn.png
+  overlay_filter: 0.5
 last_modified_at: 2018-05-05T15:59:07-04:00
 toc: true
 ---
 
-
-##Installing Kurento Media Server on Ubuntu 16.04 with Safari Support
-
 You can install the Kurento Media server with using official [Kurento installation guide](http://doc-kurento.readthedocs.io/en/stable/user/installation.html). To make Kurento work perfectly, you need a Turn server.
 [Coturn](https://github.com/coturn/coturn) is an opensource turn server. We can easily setup Coturn on Ubuntu 16.04 (Xenial) with official Coturn repo. 
 
+## Firewall Rules
 First Make sure that you have opened up following ports in your firewall
 
 
@@ -21,8 +20,11 @@ First Make sure that you have opened up following ports in your firewall
 3478 : UDP
 49152–65535 : UDP
 ```
+
 If you are installing Coturn on the same box as Kurento, you have to open additional ports for Kurento as well
 
+
+## Installing Coturn
 Login to Ubuntu 16.04 shell and enter following command to install Coturn
 
 
@@ -31,6 +33,7 @@ sudo apt-get -y update
 sudo apt-get -y install coturn
 ```
 
+## Configuration
 Then open following file with vim 
 ```
 sudo vim /etc/default/coturn
@@ -59,6 +62,7 @@ Now restart the coturn service
 sudo service coturn restart
 ```
 
+## Testing
 Go to [trickle-ice](https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/) page and enter following details.
 
 ```bash
