@@ -160,6 +160,7 @@ exclude:
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
   - .idea
+  - landingpage
 keep_files:
   - .git
   - .svn
