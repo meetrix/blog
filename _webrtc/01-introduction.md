@@ -1,7 +1,10 @@
 ---
-title: "Introduction"
+title: "Introduction to WebRTC Libraries"
 permalink: /webrtc/introduction/
-excerpt: "How to quickly install and setup Minimal Mistakes for use with GitHub Pages."
+excerpt: "WebRTC Library Comparision"
+header:
+  overlay_image: /assets/images/webrtc/01-introduction/introduction.png
+  teaser: /assets/images/webrtc/01-introduction/introduction.png
 last_modified_at: 2018-03-20T15:58:49-04:00
 redirect_from:
   - /theme-setup/
