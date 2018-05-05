@@ -1,6 +1,6 @@
 # main links
 main:
   - title: "WebRTC"
-    url: /webrtc/introduction/
+    url: /
   - title: "Turn"
     url: /webrtc/turnserver/long_term_cred
