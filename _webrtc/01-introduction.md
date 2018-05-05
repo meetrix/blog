@@ -5,10 +5,12 @@ excerpt: "WebRTC Library Comparision"
 header:
   overlay_image: /assets/images/webrtc/01-introduction/introduction.png
   teaser: /assets/images/webrtc/01-introduction/introduction.png
-last_modified_at: 2018-03-20T15:58:49-04:00
+  overlay_filter: 0.5
+last_modified_at: 2018-05-05T15:58:49-04:00
 redirect_from:
   - /theme-setup/
 toc: true
+author: Jay
 ---
 
 If you are visiting this blog, hope that you are already familiar with [WebRTC](https://webrtc.org/). This guide will not cover the basics of WebRTC

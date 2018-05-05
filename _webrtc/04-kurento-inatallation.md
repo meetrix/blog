@@ -8,6 +8,7 @@ header:
   overlay_filter: 0.5
 last_modified_at: 2018-05-05T15:59:07-04:00
 toc: true
+author: Jay
 ---
 
 You can install the Kurento Media server with using official [Kurento installation guide](http://doc-kurento.readthedocs.io/en/stable/user/installation.html). To make Kurento work perfectly, you need a Turn server.
