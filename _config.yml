@@ -21,7 +21,7 @@ title_separator          : "-"
 name                     : &name "Meetrix Technology Solutions"
 description              : "The Tech You Need to Run the Marathon"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/"
+baseurl                  : "/blog"
 repository               : "meetrix/blog"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -197,6 +197,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
+destination: _site/blog
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
