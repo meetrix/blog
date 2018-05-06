@@ -140,6 +140,12 @@ gulp.task('copy', function() {
   ])
     .pipe(gulp.dest('../_site'))
 
+  // Sitemap
+  gulp.src([
+    './sitemap.xml',
+  ])
+    .pipe(gulp.dest('../_site'))
+
 });
 
 // Default task
