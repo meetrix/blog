@@ -16,3 +16,7 @@ run `bundle exec jekyll build` in parent dir and then `gulp` inside landingpage
 
 
 ALGOLIA_API_KEYALGOLIA ='your_admin_api_key' bundle exec jekyll algolia
+
+## Upload to S3
+
+`aws s3 cp  --recursive ./_site/ s3://meetrix.io`
