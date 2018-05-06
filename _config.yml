@@ -58,14 +58,14 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia
+search                   : true
+search_full_content      : true
+search_provider          : algolia
 algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  application_id         : "65XAZZDZFN"
+  index_name             : "meetrix_blog"
+  search_only_api_key    : "9d97ce109d7f021a5cccdfb1cd3964b1"
+  powered_by             : true
 
 # SEO Related
 google_site_verification :

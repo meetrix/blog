@@ -11,3 +11,8 @@ run `gulp dev` inside `landingpage` directory this will open up the dev server a
 ## Production
 
 run `bundle exec jekyll build` in parent dir and then `gulp` inside landingpage
+
+## Indexing
+
+
+ALGOLIA_API_KEYALGOLIA ='your_admin_api_key' bundle exec jekyll algolia
