@@ -78,13 +78,13 @@ twitter:
   username               : &twitter "meetrixio"
 facebook:
   username               : &facebook "meetrix"
-  app_id                 :
-  publisher              :
+  app_id                 :  "131906234232845"
+  publisher              : "https://www.facebook.com/meetrix"
 og_image                 : "/assets/img/meetrix-logo.png"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
+  type                   : Organization
   name                   : # If the user or organization name differs from the site's name
   links:
       - "https://twitter.com/meetrixio"
@@ -92,9 +92,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-118777783-1"
 
 
 # Site Author
