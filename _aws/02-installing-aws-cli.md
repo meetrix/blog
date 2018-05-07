@@ -5,7 +5,15 @@ excerpt: "Getting things working with AWS IoT."
 last_modified_at: 2018-03-20T15:19:22-04:00
 ---
 
-This guide was tested only on Ubuntu 16.04 environment.
+These instructions were tested on Ubuntu 16.04 environment.
+
+## Quick Installation
+
+```bash
+LC_ALL="en_US.UTF-8" && \
+LC_CTYPE="en_US.UTF-8" && \
+sudo apt install python-pip && \
+```
 
 ## Install Python Pip
 
@@ -74,6 +82,7 @@ aws s3 cp <PATH_TO_IMAGE> s3://<YOUR_BUCKET_NAME>
 ```
 
 ```bash
-aws ec2 import-image --description "My VM" --license-type <value> --disk-containers file://vm_import.json
+aws ec2 import-image --description "MyVM" --license-type BYOL --disk-containers file://containers.json
+aws ec2 describe-conversion-tasks --region
 ```
 

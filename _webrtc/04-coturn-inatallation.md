@@ -1,6 +1,6 @@
 ---
 title: "Installing Coturn on Ubuntu 16.04 to Work with Kurento"
-permalink: /webrtc/kurento/
+permalink: /webrtc/coturn/
 excerpt: "Shared Secret Mechanism"
 header:
   overlay_image: /assets/images/webrtc/04-kurento-installation/kurento_coturn.png
