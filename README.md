@@ -10,7 +10,7 @@ run `gulp dev` inside `landingpage` directory this will open up the dev server a
 
 ## Production
 
-run `bundle exec jekyll build` in parent dir and then `gulp` inside landingpage
+run `JEKYLL_ENV=production bundle exec jekyll build` in parent dir and then `gulp` inside landingpage
 
 ## Indexing
 
