@@ -12,7 +12,7 @@ These instructions were tested on Ubuntu 16.04 environment.
 ```bash
 LC_ALL="en_US.UTF-8" && \
 LC_CTYPE="en_US.UTF-8" && \
-sudo apt install python-pip && \
+sudo apt install python-pip
 ```
 
 ## Install Python Pip
