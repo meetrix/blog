@@ -23,19 +23,19 @@ This guide would be useful if you are,
 2. Want to build your own WebRTC infrastructure
 3. Heavily using AWS infrastructure
 
-**Note:** This might not discuss about all the available WebRTC libraries and tools, but the ones that we have experience.
+**Note:** This might not discuss about all the available WebRTC libraries and tools, but the ones we have experienced.
 {: .notice--info}
 
 ## What this is Not About
 
-Definitely this is not a introduction to WebRTC. And this might not be useful in following cases.
+Definitely this is not an introduction to WebRTC. And this might not be useful in following cases.
 
 1. If you dont want to manage your own WebRTC infrastructure
 2. If you just need a single peer to peer connection, and not looking for scale it up. 
 
 ## Use Cases
 
-These are some use cases that we have experience with and this guide is mainly written with that experience.
+These are some use cases that we have experienced with and this guide is mainly written with that experience.
 
 1. Online Tutoring
 2. Online Interviewing
