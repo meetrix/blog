@@ -1,4 +1,7 @@
 # main links
-#main:
-#  - title: "WebRTC"
-#    url: /
+main:
+  - title: "WebRTC"
+    url: /webrtc
+  - title: "AWS"
+    url: /aws
+

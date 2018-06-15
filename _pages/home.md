@@ -1,6 +1,6 @@
 ---
 layout: splash
-permalink: /home
+permalink: /
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/home_page/yasith.jpg
