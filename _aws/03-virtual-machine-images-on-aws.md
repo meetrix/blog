@@ -22,7 +22,7 @@ Then I tried to download it (the VM image) to my local machine and to create a V
 ## Create a virtual machine in your local computer
 
 This is a pretty simple step. You just have to download `iso` image from ubuntu official repo and create a virtual machine with VirtualBox.
-Then in VirtualBox menu go to `File->Export Appliance` and Export the VM to `ovm` format. I have exported my vm as `ubuntu_vmi.ova`
+Then in VirtualBox menu go to `File->Export Appliance` and Export the VM to `ovf` format. I have exported my vm as `ubuntu_vmi.ova`
 ## Upload Ova Image to S3
 Once the export is completed. Create a s3 bucket in AWS S3. I have created a bucket named `ubuntuvirtualmachineimages`. Then copy local `ubuntu_vmi.ova` to that bucket using `aws cli`.
 
@@ -55,6 +55,8 @@ For this step I have followed [this](https://docs.aws.amazon.com/vm-import/lates
    ]
 }
 ```
+
+You can do the same visually with IAM AWS Console, in Roles tab.
 
 2. Create `role-policy.json`. You have to replace `<YOUR_S3_BUCKET_NAME>` with your bucket name.
 
@@ -100,21 +102,13 @@ aws iam create-role --role-name vmimport --assume-role-policy-document file://tr
 aws iam put-role-policy --role-name vmimport --policy-name vmimport --policy-document file://role-policy.json
 ```
 
-5. Create `containers.js`
+5. Create `containers.json`
 
 ```json
 [
   {
     "Description": "First disk",
-    "Format": "vmdk",
-    "UserBucket": {
-        "S3Bucket": "<YOUR_S3_BUCKET_NAME>",
-        "S3Key": "<YOUR_IMAGE_NAME>"
-    }
-  },          
-  {
-    "Description": "Second disk",
-    "Format": "vmdk",
+    "Format": "ovf",
     "UserBucket": {
         "S3Bucket": "<YOUR_S3_BUCKET_NAME>",
         "S3Key": "<YOUR_IMAGE_NAME>"
@@ -123,8 +117,14 @@ aws iam put-role-policy --role-name vmimport --policy-name vmimport --policy-doc
 ]
 ```
 
+6. Import the Image
 ```bash
 aws ec2 import-image --description "MyVM" --license-type BYOL --disk-containers file://containers.json
+```
+
+7. Check Status of the task
+
+```bash
 aws ec2 describe-conversion-tasks --region
 ```
 
