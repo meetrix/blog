@@ -2,7 +2,13 @@
 title: "Uploading Large Files as Small File Chunks"
 permalink: /aws/uploading/large-files
 excerpt: "Getting things working with AWS IoT."
-last_modified_at: 2018-03-20T15:19:22-04:00
+header:
+  overlay_image: /assets/images/AWS/uploading-large-files.JPG
+  teaser: /assets/images/AWS/uploading-large-files.JPG
+  overlay_filter: 0.5
+last_modified_at: 2018-05-05T15:59:07-04:00
+toc: true
+author: Jay
 ---
 
 These instructions were tested on Ubuntu 16.04 environment.

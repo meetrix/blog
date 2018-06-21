@@ -2,10 +2,16 @@
 title: "Importing and Exporting Virtual Machine Images"
 permalink: /aws/ec2/import-export
 excerpt: "Getting things working with AWS IoT."
-last_modified_at: 2018-03-20T15:19:22-04:00
+header:
+  overlay_image: /assets/images/AWS/virtual-machine.png
+  teaser: /assets/images/AWS/virtual-machine.png
+  overlay_filter: 0.5
+last_modified_at: 2018-05-05T15:59:07-04:00
+toc: true
+author: Jay
 ---
 Some times you might need to use a preconfigured image in cloud environment as well as on-premise servers with virtualization. Amazon Web Services support importing VM to Amazon Machine Images and Exporting Imported instances.
-Please note AWS only officially support for exporting previousely imported instances. Thagt means you will not be able to export a regular ec2 instance to Virtual Machine Image.
+Please note AWS only officially support for exporting previously imported instances. That means you will not be able to export a regular ec2 instance to Virtual Machine Image.
 
 In this guide we will create a Virtual Machine image in Ova format in our local server and import it to AWS. 
 There are few things that I have tried and failed.
