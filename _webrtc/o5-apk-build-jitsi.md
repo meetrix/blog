@@ -74,6 +74,15 @@ domain : meet.meetrix.io
       </activity>
     </application>
   ```
+---
+## react native environment setup
+  `https://facebook.github.io/react-native/docs/getting-started.html`
+## react native app run
+  `react-native run-android`
+## connect with development server
+  `https://facebook.github.io/react-native/docs/running-on-device.html#method-1-using-adb-reverse-recommended`
+## react native android app signing
+  `https://facebook.github.io/react-native/docs/signed-apk-android.html`
 
 
 
