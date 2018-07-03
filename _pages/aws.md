@@ -1,8 +1,8 @@
 ---
 title: WebRTC
 layout: collection
-permalink: /webrtc
-collection: webrtc
+permalink: /aws
+collection: aws
 entries_layout: grid
 classes: wide
 ---

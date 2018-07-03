@@ -290,9 +290,24 @@ defaults:
       comments: true
       sidebar:
         nav: "webrtc"
+  # aws
+  - scope:
+      path: ""
+      type: aws
+    values:
+      layout: single
+      read_time: true
+      author_profile: true
+      share: true
+      comments: true
+      sidebar:
+        nav: "aws"
 
 # Collections
 collections:
   webrtc:
+    output: true
+    permalink: /:collection/:path/
+  aws:
     output: true
     permalink: /:collection/:path/
