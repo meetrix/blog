@@ -14,7 +14,7 @@ author: Jay
 ## Long Term Credential Mechanism
 
 Most of the webRTC libraries including SimpleWebRTC, SpreedWebRTC requires the turn server to be configured in long-term credentials mechanism. 
-When a turn server is installed, we can star the turn server with long term credentials mechanism using `-a` flag and we can pass the shared secret like this.
+When a turn server is installed, we can start the turn server with long term credentials mechanism using `-a` flag and we can pass the shared secret like this.
 
 
 ```bash
@@ -112,10 +112,9 @@ turn:<YOUR_SERVER_IP>:<YOUR_SERVER_PORT>
 
 for example
 
-```turn:1.2.3.4:3478```
+``` turn:1.2.3.4:3478 ```
 
-For Username and Password enter the respective outputs from the above bash script. Then click `Add Server` button and press `Gather candidates` button. If you get a `Done`
-message, you have successfully configured the turn server.
+For Username and Password enter the respective outputs from the above bash script. Then click `Add Server` button and press `Gather candidates` button. If you are getting a message saying `Done`, you have successfully configured the turn server.
 
 ## Pushing the image to Docker Hub
 After the image is built run the following command to find out the image id.
