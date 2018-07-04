@@ -1,5 +1,5 @@
 ---
-title: WebRTC
+title: AWS
 layout: collection
 permalink: /aws
 collection: aws
